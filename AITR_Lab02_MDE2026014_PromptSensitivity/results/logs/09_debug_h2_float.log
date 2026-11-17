@@ -1,0 +1,5 @@
+2026-11-17 post-run check of the H2 decision.
+Observed: H2_supported=False although phi3_mini reversal(E2) - reversal(E3) = 18/150 - 15/150 = 3/150 = 0.02, which meets the prespecified ">= 0.02".
+Cause: floating-point (0.019999999999999990 < 0.02). The metric values are unchanged; only the threshold comparison is affected.
+Fix: compare with tolerance 1e-9 (diff above). The run is repeated; the earlier log is kept as 08_test_analysis.log; the rerun is 08b_test_analysis_after_float_fix.log.
+Reporting: H2 is described as met only at the threshold, by one model (3 items); it is a weak result, not a strong one.

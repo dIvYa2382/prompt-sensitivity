@@ -1,0 +1,16 @@
+model,gold,label,n
+gemma2,maybe,yes,1
+gemma2,no,maybe,22
+gemma2,no,yes,2
+gemma2,yes,maybe,21
+llama3.2,maybe,yes,5
+llama3.2,no,yes,9
+mistral,no,maybe,17
+mistral,no,yes,5
+mistral,yes,maybe,21
+phi3_mini,maybe,no,2
+phi3_mini,maybe,yes,2
+phi3_mini,no,maybe,3
+phi3_mini,no,yes,5
+phi3_mini,yes,maybe,9
+phi3_mini,yes,no,8

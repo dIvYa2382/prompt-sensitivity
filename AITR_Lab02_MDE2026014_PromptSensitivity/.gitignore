@@ -1,0 +1,11 @@
+data_raw/
+data/*.csv
+annotation/annotation_key_DO_NOT_OPEN_BEFORE_LABELLING.csv
+results/starter_check/
+__pycache__/
+*.aux
+*.log
+!results/logs/*.log
+*.blg
+*.out
+.venv/

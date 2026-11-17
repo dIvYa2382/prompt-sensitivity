@@ -1,0 +1,7 @@
+PASS test_prompt09_cases
+PASS test_ordinal_distance
+PASS test_flags
+PASS test_majority_and_published
+PASS test_entropy_gini
+PASS test_parsers_on_real_strings
+6 tests passed

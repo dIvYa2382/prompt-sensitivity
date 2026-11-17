@@ -1,0 +1,1 @@
+2026-11-17 bug: AttributeError 'Styler' object has no attribute 'unique' (df.style is a pandas accessor). Fix: column renamed style -> variant in src/data.py and scripts/validate_data.py. No results existed before the fix.

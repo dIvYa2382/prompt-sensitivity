@@ -1,0 +1,5 @@
+35c35,36
+<                    r"cannot determine|insufficient|not enough|inconclusive|possibly|perhaps|it depends)\b")
+---
+>                    r"cannot determine|insufficient|not enough|inconclusive|possibly|perhaps|it depends|"
+>                    r"(?:doesn't|does not|do not|don't|didn't|did not) (?:provide|give|contain|offer) (?:enough|sufficient))\b")

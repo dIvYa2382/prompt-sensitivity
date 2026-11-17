@@ -1,0 +1,16 @@
+model,gold,n,stable,stable_wrong
+phi3_mini,yes,91,35,17
+phi3_mini,no,49,19,8
+phi3_mini,maybe,10,5,4
+llama3.2,yes,91,46,0
+llama3.2,no,49,15,9
+llama3.2,maybe,10,5,5
+gemma2,yes,91,44,21
+gemma2,no,49,25,24
+gemma2,maybe,10,5,1
+mistral,yes,91,56,21
+mistral,no,49,24,22
+mistral,maybe,10,1,0
+meditron,yes,91,0,0
+meditron,no,49,0,0
+meditron,maybe,10,0,0

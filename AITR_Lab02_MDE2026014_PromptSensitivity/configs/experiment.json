@@ -1,0 +1,31 @@
+{
+ "frozen_on": "2026-11-17, before any test-split metric was computed",
+ "data": {
+  "source": "clinical-llm-eval (Hariprasad 2026, arXiv:2603.00917): public raw PubMedQA outputs of 5 open models under 5 prompt styles",
+  "repo": "https://github.com/shravani-01/clinical-llm-eval",
+  "commit": "4c82a7b6baac175ea2de77e7a78804b8a7018943",
+  "generation_settings_as_reported": "Ollama, temperature 0, max 10 output tokens, one run per prompt",
+  "task": "PubMedQA: fixed abstract evidence + research question -> conclusion yes / no / maybe (supports / contradicts / insufficient)"
+ },
+ "split": {"seed": 2026, "n_dev": 50, "use": "dev items: inspect raw outputs and write the E3 parser rules; test items (150): all reported results"},
+ "conclusion_mapping": {"yes": "supports", "no": "contradicts", "maybe": "insufficient / uncertain"},
+ "evaluators": ["E1_strict", "E2_substring (published pipeline)", "E3_wordboundary (ours)"],
+ "primary_evaluator": "E3_wordboundary",
+ "distance": {
+  "D_cat": "0 if same category else 1 (INVALID counts as its own category)",
+  "D_ord": "yes-no = 1, yes-maybe = no-maybe = 0.5, same = 0; INVALID vs anything = 1"
+ },
+ "primary_metric": "S_p (review Eq. 7) with D_cat and the majority category as C-bar, per model on test items; equivalently mean share of styles agreeing with the item's majority conclusion",
+ "secondary_metrics": ["share of fully stable items (all 5 styles agree)", "polarity reversal rate (item gets both yes and no)",
+                       "uncertainty-shift rate (maybe plus a definite answer, no reversal)", "S_p with D_ord",
+                       "accuracy per style", "accuracy-stability matrix (review Table 4)",
+                       "Errica et al. sensitivity (normalised entropy) and consistency (1 - mean TVD within gold class)",
+                       "prompt-induced vs model-induced disagreement", "CSI-style component ranking under random weights (review Eq. 8)"],
+ "evaluator_comparison": "same outputs scored by E1/E2/E3; report how S_p, reversal rate and accuracy change; human labels on a seeded sample are left to the author",
+ "uncertainty": {"bootstrap": "items resampled, 10000 resamples, seed 2026, percentile 95% CI"},
+ "expectations_stated_before_test": {
+  "H1": "for every model, at least one test item changes conclusion category across styles (review Sec. 2.2, 5)",
+  "H2": "E2 substring scoring changes measured S_p or reversal rate relative to E3 for at least one model by >= 0.02 (Hua et al. evaluation artifact, review Sec. 7.3)",
+  "H3": "accuracy and stability are not the same ranking (review Table 4)"
+ }
+}

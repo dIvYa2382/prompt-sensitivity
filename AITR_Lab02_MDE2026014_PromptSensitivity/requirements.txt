@@ -1,0 +1,5 @@
+# Versions used for the logged run (results/logs/02_starter_code_runs.log shows Python/pandas/NumPy)
+pandas>=2.2      # logged run: 3.0.5 (starter code needs groupby(..., include_groups=False))
+numpy>=1.26      # logged run: 2.5.3
+scipy>=1.11      # Kendall tau
+matplotlib>=3.8  # figures

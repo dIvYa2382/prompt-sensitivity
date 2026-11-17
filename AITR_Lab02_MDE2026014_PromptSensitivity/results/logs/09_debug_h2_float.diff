@@ -1,0 +1,6 @@
+210c210,212
+< SUM["H2_supported"] = any(abs(v["dS"]) >= 0.02 or abs(v["drev"]) >= 0.02 for v in h2.values())
+---
+> TOL = 1e-9  # 3/150 = 0.02 exactly; float gave 0.019999...
+> SUM["H2_supported"] = any(abs(v["dS"]) >= 0.02 - TOL or abs(v["drev"]) >= 0.02 - TOL for v in h2.values())
+> SUM["H2_models_meeting_threshold"] = [m for m, v in h2.items() if abs(v["dS"]) >= 0.02 - TOL or abs(v["drev"]) >= 0.02 - TOL]

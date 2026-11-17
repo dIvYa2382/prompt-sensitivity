@@ -1,0 +1,107 @@
+{
+ "n_test_items": 150,
+ "n_outputs_test": 3750,
+ "E2_E3_disagree_outputs": 62,
+ "E2_E3_maybe_to_no": 41,
+ "E2_E3_invalid_to_no": 21,
+ "E1_invalid_share": 0.5853333333333334,
+ "E1_invalid_share_excl_meditron": 0.4816666666666667,
+ "csi": {
+  "top_share": {
+   "phi3_mini": 0.0,
+   "llama3.2": 0.8815,
+   "gemma2": 0.0,
+   "mistral": 0.1185
+  },
+  "n_distinct_orders": 7,
+  "most_common_orders": [
+   [
+    "llama3.2 > mistral > gemma2 > phi3_mini",
+    0.4722
+   ],
+   [
+    "llama3.2 > mistral > phi3_mini > gemma2",
+    0.2718
+   ],
+   [
+    "llama3.2 > phi3_mini > mistral > gemma2",
+    0.1375
+   ],
+   [
+    "mistral > llama3.2 > gemma2 > phi3_mini",
+    0.0888
+   ]
+  ],
+  "equal_weight_order": "llama3.2 > mistral > gemma2 > phi3_mini",
+  "order_by_A_inf": "mistral > gemma2 > phi3_mini > llama3.2",
+  "order_by_A_unc": "llama3.2 > mistral > gemma2 > phi3_mini",
+  "order_by_A_fact": "llama3.2 > phi3_mini > mistral > gemma2"
+ },
+ "H1_any_change_share": {
+  "phi3_mini": 0.6066666666666667,
+  "llama3.2": 0.56,
+  "gemma2": 0.5066666666666667,
+  "mistral": 0.46,
+  "meditron": 0.02
+ },
+ "H1_supported": true,
+ "H2_diffs": {
+  "phi3_mini": {
+   "dS": -0.002666666666666706,
+   "drev": 0.01999999999999999
+  },
+  "llama3.2": {
+   "dS": 0.0013333333333332975,
+   "drev": 0.006666666666666654
+  },
+  "gemma2": {
+   "dS": -0.002666666666666706,
+   "drev": 0.0
+  },
+  "mistral": {
+   "dS": -0.01333333333333342,
+   "drev": 0.006666666666666667
+  },
+  "meditron": {
+   "dS": -0.005333333333333079,
+   "drev": 0.0
+  }
+ },
+ "H2_supported": true,
+ "H2_models_meeting_threshold": [
+  "phi3_mini"
+ ],
+ "H3_acc_rank": [
+  "llama3.2",
+  "phi3_mini",
+  "mistral",
+  "gemma2"
+ ],
+ "H3_stab_rank": [
+  "mistral",
+  "gemma2",
+  "phi3_mini",
+  "llama3.2"
+ ],
+ "H3_supported": true,
+ "H3_kendall_tau": -0.6666666666666669,
+ "prompt_vs_model": [
+  {
+   "subset": "all5",
+   "prompt_induced": 0.22906666666666667,
+   "model_induced": 0.6689333333333334,
+   "diff_model_minus_prompt": 0.4398666666666667,
+   "lo": 0.41866666666666663,
+   "hi": 0.4619999999999999
+  },
+  {
+   "subset": "excl_meditron",
+   "prompt_induced": 0.2843333333333334,
+   "model_induced": 0.4728888888888889,
+   "diff_model_minus_prompt": 0.18855555555555556,
+   "lo": 0.158,
+   "hi": 0.22072638888888885
+  }
+ ],
+ "annotation_sample_n": 100
+}

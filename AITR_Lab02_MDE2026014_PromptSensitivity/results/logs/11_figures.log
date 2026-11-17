@@ -1,0 +1,13 @@
+figure: fig_acc_vs_stability.pdf
+figure: fig_evaluators.pdf
+figure: fig_item_types.pdf
+figure: fig_variant_deviation.pdf
+type       fully stable  uncertainty shift  ...  format only  all invalid
+model                                       ...                          
+phi3_mini         0.393              0.507  ...        0.000         0.00
+llama3.2          0.440              0.207  ...        0.040         0.00
+gemma2            0.493              0.420  ...        0.080         0.00
+mistral           0.540              0.233  ...        0.227         0.00
+meditron          0.000              0.000  ...        0.020         0.98
+
+[5 rows x 5 columns]

@@ -1,0 +1,23 @@
+lab        INVALID  maybe     no    yes
+model                                  
+phi3_mini    0.000  0.319  0.280  0.401
+llama3.2     0.035  0.100  0.237  0.628
+gemma2       0.020  0.596  0.015  0.369
+mistral      0.089  0.507  0.043  0.361
+meditron     0.996  0.000  0.001  0.003
+    model  gold label  n
+   gemma2 maybe   yes  1
+   gemma2    no maybe 22
+   gemma2    no   yes  2
+   gemma2   yes maybe 21
+ llama3.2 maybe   yes  5
+ llama3.2    no   yes  9
+  mistral    no maybe 17
+  mistral    no   yes  5
+  mistral   yes maybe 21
+phi3_mini maybe    no  2
+phi3_mini maybe   yes  2
+phi3_mini    no maybe  3
+phi3_mini    no   yes  5
+phi3_mini   yes maybe  9
+phi3_mini   yes    no  8

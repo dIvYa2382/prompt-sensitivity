@@ -1,0 +1,238 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{14}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter does
+%%% not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+\makeatletter
+\@ifundefined{NAT@parse@date}{}{\let\NAT@parse@date@orig\NAT@parse@date}
+\@ifundefined{NAT@parse@date}{}{\def\NAT@parse@date#1#2#3#4#5#6@@{\NAT@parse@date@orig#1#2#3#4#5#6@@\def\NAT@tempyear{0000}\def\NAT@tempexlab{{?}}\ifx\NAT@year\NAT@tempyear\ifx\NAT@exlab\NAT@tempexlab\def\NAT@date{[n.\,d.]}\else\edef\NAT@date{[n.\,d.]\NAT@exlab}\fi\fi}}
+\makeatother
+
+\bibitem[Chatterjee et~al\mbox{.}(2024)]%
+        {chatterjee2024posix}
+\bibfield{author}{\bibinfo{person}{Anwoy Chatterjee}, \bibinfo{person}{H.~S. V.
+  N. S.~Kowndinya Renduchintala}, \bibinfo{person}{Sumit Bhatia}, {and}
+  \bibinfo{person}{Tanmoy Chakraborty}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{POSIX}: A Prompt Sensitivity Index For Large
+  Language Models}. In \bibinfo{booktitle}{\emph{Findings of the Association
+  for Computational Linguistics: EMNLP 2024}}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{pages}{14550--14565}.
+\newblock
+\href{https://doi.org/10.18653/v1/2024.findings-emnlp.852}{doi:\nolinkurl{10.18653/v1/2024.findings-emnlp.852}}
+
+
+\bibitem[Chen et~al\mbox{.}(2026)]%
+        {chen2026stability}
+\bibfield{author}{\bibinfo{person}{Ke Chen}, \bibinfo{person}{Xucheng Yu},
+  \bibinfo{person}{Yufei Zhou}, {and} \bibinfo{person}{Haohan Wang}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Prompt Stability Matters: Evaluating and Optimizing
+  Auto-Generated Prompt in General-Purpose Systems}. In
+  \bibinfo{booktitle}{\emph{Conference on Parsimony and Learning}}
+  \emph{(\bibinfo{series}{Proceedings of Machine Learning Research},
+  Vol.~\bibinfo{volume}{328})}. \bibinfo{publisher}{PMLR},
+  \bibinfo{pages}{360--374}.
+\newblock
+
+
+\bibitem[Errica et~al\mbox{.}(2025)]%
+        {errica2025sensitivity}
+\bibfield{author}{\bibinfo{person}{Federico Errica}, \bibinfo{person}{Davide
+  Sanvito}, \bibinfo{person}{Giuseppe Siracusano}, {and}
+  \bibinfo{person}{Roberto Bifulco}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{What Did {I} Do Wrong? Quantifying {LLMs}'
+  Sensitivity and Consistency to Prompt Engineering}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2025 Conference of the Nations
+  of the Americas Chapter of the Association for Computational Linguistics:
+  Human Language Technologies}}. \bibinfo{publisher}{Association for
+  Computational Linguistics}, \bibinfo{pages}{1543--1558}.
+\newblock
+\href{https://doi.org/10.18653/v1/2025.naacl-long.73}{doi:\nolinkurl{10.18653/v1/2025.naacl-long.73}}
+
+
+\bibitem[Habba et~al\mbox{.}(2025)]%
+        {habba2025dove}
+\bibfield{author}{\bibinfo{person}{Eliya Habba}, \bibinfo{person}{Ofir Arviv},
+  \bibinfo{person}{Itay Itzhak}, \bibinfo{person}{Yotam Perlitz},
+  \bibinfo{person}{Elron Bandel}, \bibinfo{person}{Leshem Choshen},
+  \bibinfo{person}{Michal Shmueli-Scheuer}, {and} \bibinfo{person}{Gabriel
+  Stanovsky}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{DOVE}: A Large-Scale Multi-Dimensional Predictions
+  Dataset Towards Meaningful {LLM} Evaluation}. In
+  \bibinfo{booktitle}{\emph{Findings of the Association for Computational
+  Linguistics: ACL 2025}}. \bibinfo{publisher}{Association for Computational
+  Linguistics}, \bibinfo{pages}{11744--11763}.
+\newblock
+\href{https://doi.org/10.18653/v1/2025.findings-acl.611}{doi:\nolinkurl{10.18653/v1/2025.findings-acl.611}}
+
+
+\bibitem[Hariprasad(2026)]%
+        {hariprasad2026clinical}
+\bibfield{author}{\bibinfo{person}{Shravani Hariprasad}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Prompt Sensitivity and Answer Consistency of Small
+  Open-Source Large Language Models on Clinical Question Answering:
+  Implications for Low-Resource Healthcare Deployment}.
+\newblock
+\showeprint[arxiv]{2603.00917}
+\href{https://doi.org/10.48550/arXiv.2603.00917}{doi:\nolinkurl{10.48550/arXiv.2603.00917}}
+\newblock
+\shownote{Code and raw outputs:
+  \url{https://github.com/shravani-01/clinical-llm-eval}, commit 4c82a7b}.
+
+
+\bibitem[Hua et~al\mbox{.}(2025)]%
+        {hua2025flaw}
+\bibfield{author}{\bibinfo{person}{Andong Hua}, \bibinfo{person}{Kenan Tang},
+  \bibinfo{person}{Chenhe Gu}, \bibinfo{person}{Jindong Gu},
+  \bibinfo{person}{Eric Wong}, {and} \bibinfo{person}{Yao Qin}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Flaw or Artifact? Rethinking Prompt Sensitivity in
+  Evaluating {LLMs}}. In \bibinfo{booktitle}{\emph{Proceedings of the 2025
+  Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{19889--19899}.
+\newblock
+\href{https://doi.org/10.18653/v1/2025.emnlp-main.1006}{doi:\nolinkurl{10.18653/v1/2025.emnlp-main.1006}}
+
+
+\bibitem[Jin et~al\mbox{.}(2019)]%
+        {jin2019pubmedqa}
+\bibfield{author}{\bibinfo{person}{Qiao Jin}, \bibinfo{person}{Bhuwan Dhingra},
+  \bibinfo{person}{Zhengping Liu}, \bibinfo{person}{William Cohen}, {and}
+  \bibinfo{person}{Xinghua Lu}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{PubMedQA}: A Dataset for Biomedical Research
+  Question Answering}. In \bibinfo{booktitle}{\emph{Proceedings of the 2019
+  Conference on Empirical Methods in Natural Language Processing and the 9th
+  International Joint Conference on Natural Language Processing
+  (EMNLP-IJCNLP)}}. \bibinfo{publisher}{Association for Computational
+  Linguistics}, \bibinfo{pages}{2567--2577}.
+\newblock
+\href{https://doi.org/10.18653/v1/D19-1259}{doi:\nolinkurl{10.18653/v1/D19-1259}}
+
+
+\bibitem[Joshi(2026)]%
+        {joshi2026review}
+\bibfield{author}{\bibinfo{person}{Divya Joshi}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Prompt Sensitivity and Its Effect on the Stability of
+  {LLM}-Generated Research Conclusions}.
+\newblock
+\newblock
+\shownote{Mid-semester review paper, AI Tools for Research (MDE\_14, enrolment
+  MDE2026014). Unpublished course manuscript}.
+
+
+\bibitem[Liu and Chu(2026)]%
+        {liu2026understanding}
+\bibfield{author}{\bibinfo{person}{Yang Liu} {and} \bibinfo{person}{Chenhui
+  Chu}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Understanding the Prompt Sensitivity}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 64th Annual Meeting of the
+  Association for Computational Linguistics}}. \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{pages}{44362--44388}.
+\newblock
+\href{https://doi.org/10.18653/v1/2026.acl-long.2053}{doi:\nolinkurl{10.18653/v1/2026.acl-long.2053}}
+
+
+\bibitem[Si et~al\mbox{.}(2025)]%
+        {si2025ideas}
+\bibfield{author}{\bibinfo{person}{Chenglei Si}, \bibinfo{person}{Diyi Yang},
+  {and} \bibinfo{person}{Tatsunori Hashimoto}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Can {LLMs} Generate Novel Research Ideas? A
+  Large-Scale Human Study with 100+ {NLP} Researchers}. In
+  \bibinfo{booktitle}{\emph{International Conference on Learning
+  Representations}}.
+\newblock
+
+
+\bibitem[Wang et~al\mbox{.}(2024)]%
+        {wang2024guideline}
+\bibfield{author}{\bibinfo{person}{Li Wang}, \bibinfo{person}{Xi Chen},
+  \bibinfo{person}{XiangWen Deng}, \bibinfo{person}{Hao Wen},
+  \bibinfo{person}{MingKe You}, \bibinfo{person}{WeiZhi Liu},
+  \bibinfo{person}{Qi Li}, {et~al\mbox{.}}} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Prompt Engineering in Consistency and Reliability
+  with the Evidence-Based Guideline for {LLMs}}.
+\newblock \bibinfo{journal}{\emph{npj Digital Medicine}}  \bibinfo{volume}{7},
+  Article \bibinfo{articleno}{41} (\bibinfo{year}{2024}).
+\newblock
+\href{https://doi.org/10.1038/s41746-024-01029-4}{doi:\nolinkurl{10.1038/s41746-024-01029-4}}
+
+
+\bibitem[Wang et~al\mbox{.}(2023)]%
+        {wang2023selfconsistency}
+\bibfield{author}{\bibinfo{person}{Xuezhi Wang}, \bibinfo{person}{Jason Wei},
+  \bibinfo{person}{Dale Schuurmans}, \bibinfo{person}{Quoc~V. Le},
+  \bibinfo{person}{Ed~H. Chi}, \bibinfo{person}{Sharan Narang},
+  \bibinfo{person}{Aakanksha Chowdhery}, {and} \bibinfo{person}{Denny Zhou}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Self-Consistency Improves Chain of Thought
+  Reasoning in Language Models}. In \bibinfo{booktitle}{\emph{International
+  Conference on Learning Representations}}.
+\newblock
+\href{https://doi.org/10.48550/arXiv.2203.11171}{doi:\nolinkurl{10.48550/arXiv.2203.11171}}
+
+
+\bibitem[Zheng et~al\mbox{.}(2023)]%
+        {zheng2023judge}
+\bibfield{author}{\bibinfo{person}{Lianmin Zheng}, \bibinfo{person}{Wei-Lin
+  Chiang}, \bibinfo{person}{Ying Sheng}, \bibinfo{person}{Siyuan Zhuang},
+  \bibinfo{person}{Zhanghao Wu}, \bibinfo{person}{Yonghao Zhuang},
+  \bibinfo{person}{Zi Lin}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Judging {LLM}-as-a-Judge with {MT}-Bench and Chatbot
+  Arena}.
+\newblock
+\showeprint[arxiv]{2306.05685}
+\href{https://doi.org/10.48550/arXiv.2306.05685}{doi:\nolinkurl{10.48550/arXiv.2306.05685}}
+
+
+\bibitem[Zhuo et~al\mbox{.}(2024)]%
+        {zhuo2024prosa}
+\bibfield{author}{\bibinfo{person}{Jingming Zhuo}, \bibinfo{person}{Songyang
+  Zhang}, \bibinfo{person}{Xinyu Fang}, \bibinfo{person}{Haodong Duan},
+  \bibinfo{person}{Dahua Lin}, {and} \bibinfo{person}{Kai Chen}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{{ProSA}: Assessing and Understanding the Prompt
+  Sensitivity of {LLMs}}. In \bibinfo{booktitle}{\emph{Findings of the
+  Association for Computational Linguistics: EMNLP 2024}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{1950--1976}.
+\newblock
+\href{https://doi.org/10.18653/v1/2024.findings-emnlp.108}{doi:\nolinkurl{10.18653/v1/2024.findings-emnlp.108}}
+
+
+\end{thebibliography}

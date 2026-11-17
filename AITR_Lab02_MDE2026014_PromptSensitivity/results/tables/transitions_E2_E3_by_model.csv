@@ -1,0 +1,8 @@
+model,E2_substring,E3_wordboundary,n
+gemma2,no,INVALID,2
+gemma2,no,maybe,2
+llama3.2,no,INVALID,5
+meditron,no,INVALID,4
+mistral,no,INVALID,10
+mistral,no,maybe,14
+phi3_mini,no,maybe,25

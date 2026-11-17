@@ -1,0 +1,8 @@
+rows: 5000 | models: 5 | items/model: [200] | styles: ['direct', 'formal', 'original', 'roleplay', 'simplified']
+items whose question or gold label differs across models: 0
+gold label == sampled CSV final_decision (row order): 200 / 200
+question == sampled CSV question (row order): 200 / 200
+identical evidence across the 5 styles: 200/200 | evidence chars min/median/max: 311/1000/1000 | evidence cut at 1000 chars: 177 | long_answer (author conclusion) text found in a prompt: 1
+published extractor re-implemented: matches stored 'extracted' field in 5000 / 5000
+gold distribution: {'yes': 122, 'no': 63, 'maybe': 15}
+split: dev 50 test 150

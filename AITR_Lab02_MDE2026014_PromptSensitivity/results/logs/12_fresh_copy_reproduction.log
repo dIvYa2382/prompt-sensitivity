@@ -1,0 +1,22 @@
+fresh-copy reproduction 2026-11-17T05:44:50Z in /tmp/dj_fresh
+pinned commit: 4c82a7b6baac175ea2de77e7a78804b8a7018943
+9c22683a65daa4919838dc1c19dade8a3c7c34ac5de33697e8d0a2851304b47f  data_raw/clinical-llm-eval/data/prompts/pubmedqa_prompts.json
+b02f9b9f7b500f587b3741ca229c8fc3aebfc986cc27abb15f7660c28adba03e  data_raw/clinical-llm-eval/results/raw/pubmedqa_gemma2.json
+6b1a8912630a21b600b386e9b6f9acb14dcc4629f150ae708c32e79b725a597e  data_raw/clinical-llm-eval/results/raw/pubmedqa_llama3.2.json
+ff00d2d3f3c8d96bd8aa1ecb66a950884de7762f7d66afe30cf6cd04caa1d064  data_raw/clinical-llm-eval/results/raw/pubmedqa_meditron.json
+25b6181daf76c89782c03adaae5ad0f3b29fc203ece57fefd74c435be2e9b53f  data_raw/clinical-llm-eval/results/raw/pubmedqa_mistral.json
+91bb4077389690e4bbc07c7c1afba8cebbf729ee4cf9f1cda1690f7a06b466cc  data_raw/clinical-llm-eval/results/raw/pubmedqa_phi3_mini.json
+e41d3a7ae8697b9457ab1a037584e8528a136b1097ee720ebaf838ebac7154b0  data_raw/clinical-llm-eval/results/summary/master_summary.csv
+run_all.sh exit: 0
+--- compare every generated table, data file, summary and macro file with the delivered copy
+identical: 28/28
+results/logs/01_unit_tests.log:PASS test_prompt09_cases
+results/logs/01_unit_tests.log:PASS test_ordinal_distance
+results/logs/01_unit_tests.log:PASS test_flags
+results/logs/01_unit_tests.log:PASS test_majority_and_published
+results/logs/01_unit_tests.log:PASS test_entropy_gini
+results/logs/01_unit_tests.log:PASS test_parsers_on_real_strings
+results/logs/01_unit_tests.log:6 tests passed
+results/logs/02_starter_code_runs.log:Environment smoke test: PASS
+results/logs/02_starter_code_runs.log:starter mean agreement 0.826667 | our S_p(D_cat) 0.826667 | equal: True
+results/logs/07_baseline_reproduction.log:published PubMedQA cells reproduced: 100/100

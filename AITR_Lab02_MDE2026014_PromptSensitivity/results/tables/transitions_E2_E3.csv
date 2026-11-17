@@ -1,0 +1,7 @@
+E2_substring,E3_wordboundary,n
+INVALID,INVALID,834
+maybe,maybe,1100
+no,INVALID,21
+no,maybe,41
+no,no,432
+yes,yes,1322

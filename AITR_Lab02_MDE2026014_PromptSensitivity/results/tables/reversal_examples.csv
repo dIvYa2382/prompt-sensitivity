@@ -1,0 +1,10 @@
+model,item_id,gold,original,formal,simplified,roleplay,direct,lab_original,lab_formal,lab_simplified,lab_roleplay,lab_direct
+phi3_mini,40,no,yes,No. The abstract indicates that the majority (appro,Yes.,"No, based on the excerpt provided from","Maybe, as the data shows that while a majority",yes,no,yes,no,maybe
+phi3_mini,57,yes,"No, the context does not explicitly state that Chile",No. The abstract does not provide direct evidence that,no,Yes. The study aims to determine the extent,"No, the context provided does not explicitly state that",no,no,no,yes,no
+llama3.2,3,yes,No.,No.,yes.,Yes.,A: No,no,no,yes,yes,no
+llama3.2,4,yes,Maybe.,Maybe.,Maybe.,"Based on the excerpt, I would answer: Yes","No.
+
+The high cost of specialty pharmaceuticals can",maybe,maybe,maybe,yes,no
+gemma2,96,no,Maybe.,yes,maybe,The excerpt states there is **no evidence of a,"The answer is **maybe**. 
+
+Here'",maybe,yes,maybe,no,maybe

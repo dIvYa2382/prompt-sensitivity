@@ -1,0 +1,6 @@
+model,stable_correct,stable_wrong,unstable_correct,unstable_wrong
+phi3_mini,30,29,36,55
+llama3.2,52,14,43,41
+gemma2,28,46,22,54
+mistral,38,43,19,50
+meditron,0,0,2,148

@@ -1,0 +1,7 @@
+Manual inspection of the single leakage hit in 03_data_validation.log (item 65, test split).
+Check used: first 60 characters of PubMedQA long_answer (the authors' conclusion) searched in each prompt.
+long_answer starts: "Normothermic normokalemic simultaneous antegrade/retrograde perfusion did not improve, but slightly impaired ..."
+prompt context contains: "... Normothermic normokalemic simultaneous antegrade/retrograde perfusion (NNSP) may ..."
+Verdict: false positive. The 60-character prefix is the name of the intervention, which also occurs in the background
+sentence of the abstract. The conclusion ("did not improve, but slightly impaired") is not in the prompt.
+Gold label (no) is not given away. Robustness row "without item 65" kept anyway (results/tables/robustness.csv).

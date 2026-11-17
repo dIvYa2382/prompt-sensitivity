@@ -1,0 +1,69 @@
+test items: 150 | outputs: 3750
+    model  S_cat  S_cat_lo  S_cat_hi  S_ord  full_stable  reversal  uncertainty_shift  format_instability  valid_share  acc_mean  maj_correct
+phi3_mini  0.827     0.800     0.852  0.904        0.393     0.100              0.507               0.000        1.000     0.429        0.440
+ llama3.2  0.795     0.760     0.829  0.848        0.440     0.313              0.207               0.147        0.965     0.603        0.633
+   gemma2  0.843     0.815     0.871  0.911        0.493     0.007              0.420               0.093        0.980     0.347        0.333
+  mistral  0.845     0.813     0.876  0.878        0.540     0.000              0.233               0.327        0.911     0.371        0.380
+ meditron  0.996     0.991     1.000  0.996        0.000     0.000              0.000               0.020        0.004     0.003        0.013
+E2 vs E3 transitions:
+ E2_substring E3_wordboundary  n
+          no         INVALID 21
+          no           maybe 41
+variant    direct  formal  original  roleplay  simplified
+model                                                    
+gemma2      0.179   0.157     0.136     0.215       0.246
+llama3.2    0.260   0.361     0.201     0.180       0.244
+meditron    0.000   0.000     0.000     0.000       0.020
+mistral     0.308   0.131     0.107     0.294       0.071
+phi3_mini   0.354   0.214     0.199     0.096       0.146
+    model  stable_correct  stable_wrong  unstable_correct  unstable_wrong
+phi3_mini              30            29                36              55
+ llama3.2              52            14                43              41
+   gemma2              28            46                22              54
+  mistral              38            43                19              50
+ meditron               0             0                 2             148
+       subset  prompt_induced  model_induced  diff_model_minus_prompt    lo    hi
+         all5           0.229          0.669                    0.440 0.419 0.462
+excl_meditron           0.284          0.473                    0.189 0.158 0.221
+setting    primary (5 variants)  without item 65  without roleplay (4 variants)
+model                                                                          
+gemma2                    0.843            0.842                          0.852
+llama3.2                  0.795            0.796                          0.785
+meditron                  0.996            0.996                          0.995
+mistral                   0.845            0.847                          0.878
+phi3_mini                 0.827            0.826                          0.803
+{
+ "top_share": {
+  "phi3_mini": 0.0,
+  "llama3.2": 0.8815,
+  "gemma2": 0.0,
+  "mistral": 0.1185
+ },
+ "n_distinct_orders": 7,
+ "most_common_orders": [
+  [
+   "llama3.2 > mistral > gemma2 > phi3_mini",
+   0.4722
+  ],
+  [
+   "llama3.2 > mistral > phi3_mini > gemma2",
+   0.2718
+  ],
+  [
+   "llama3.2 > phi3_mini > mistral > gemma2",
+   0.1375
+  ],
+  [
+   "mistral > llama3.2 > gemma2 > phi3_mini",
+   0.0888
+  ]
+ ],
+ "equal_weight_order": "llama3.2 > mistral > gemma2 > phi3_mini",
+ "order_by_A_inf": "mistral > gemma2 > phi3_mini > llama3.2",
+ "order_by_A_unc": "llama3.2 > mistral > gemma2 > phi3_mini",
+ "order_by_A_fact": "llama3.2 > phi3_mini > mistral > gemma2"
+}
+H1 True {'phi3_mini': 0.6066666666666667, 'llama3.2': 0.56, 'gemma2': 0.5066666666666667, 'mistral': 0.46, 'meditron': 0.02}
+H2 True {'phi3_mini': {'dS': -0.002666666666666706, 'drev': 0.01999999999999999}, 'llama3.2': {'dS': 0.0013333333333332975, 'drev': 0.006666666666666654}, 'gemma2': {'dS': -0.002666666666666706, 'drev': 0.0}, 'mistral': {'dS': -0.01333333333333342, 'drev': 0.006666666666666667}, 'meditron': {'dS': -0.005333333333333079, 'drev': 0.0}}
+H3 True ['llama3.2', 'phi3_mini', 'mistral', 'gemma2'] ['mistral', 'gemma2', 'phi3_mini', 'llama3.2'] -0.6666666666666669
+wrote results/summary.json
